@@ -1,0 +1,43 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.container{
+    
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#main{
+    background-color: blueviolet;
+    width:max-width;
+    height:100vh;
+}
+
+.circle{
+   border-radius: 50%;
+   background-color: azure;
+   width:100px;
+   height:100px;
+   animation: ripple 2s infinite ease;
+   border: 15px solid gold;
+}
+
+@keyframes ripple{
+    0%{
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
+    }
+    70%{
+        box-shadow: 0 0 0 40px rgba(255, 255, 255, 0.3);
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
+    }
+}
+
+#user{
+
+}
